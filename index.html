@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Simple Canvas Game</title>
-</head>
-<body>
-<script src="js/game.js"></script>>
-</body>
-</html>
+---
+layout: default
+---
+<h1 class="headline">{{site.title}}</h1>
+{% for post in site.posts %}
+<h3><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3>
+{% endfor %}
